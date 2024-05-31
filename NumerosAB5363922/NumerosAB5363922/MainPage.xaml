@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NumerosAB5363922.MainPage"
+             BackgroundImageSource="form.jpg">
+    <!--<Summary>
+        <Createddate> 28/05/2024 </createddate>
+            <company> Instituto Nacional Cantón Lourdes</company>
+            <lastmodificationdate> 28/05/2024 </lastmodificationdate>
+            <lastmodifierautor> Andrea Rocio Pérez Arriola</lastmodifierautor>
+    </Summary>-->
+
+    <!--Colocamos esta etiqueta para ordenar los elementos que iran dentro de nuestro programa
+    tambien ponemos el margen que llevara-->
+    <StackLayout Margin="20,35,20,20">
+
+        <!--Colocamos la etiqueta label para mostrar un titulo y le ponemos sus respectivas propiedades-->
+        <Label
+                Text="FORMULA"
+                FontFamily="Elephant"
+                FontSize="32"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"/>
+
+        <!--Colocamos 3 entrys, donde 2 de ellos seran para ingresar el valor de A y de B y el otro sera para mostrar el resultado-->
+        <Entry x:Name="EntryA" 
+               Placeholder="Valor de A" 
+               />
+        
+        <Entry x:Name="EntryB" 
+               Placeholder="Valor de B" 
+               />
+        
+        <!--Colocamos un botton para que al momento de dar click este se diriga al metodo
+        y ahi realizara la accion de calcular los valores segun la formula-->
+        <Button Text="Calcular" 
+                Clicked="Button_Clicked" 
+                HeightRequest="35"
+                WidthRequest="100"
+                />
+        <Entry x:Name="EntryResul" 
+               Placeholder="Resultado" 
+               />
+
+    </StackLayout>
+
+</ContentPage>

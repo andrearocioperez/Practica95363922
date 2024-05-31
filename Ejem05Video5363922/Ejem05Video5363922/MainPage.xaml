@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejem05Video5363922.MainPage">
+
+    <!--<Summary>
+        <Createddate> 27/05/2024 </createddate>
+            <company> Instituto Nacional Cantón Lourdes</company>
+            <lastmodificationdate> 27/05/2024 </lastmodificationdate>
+            <lastmodifierautor> Andrea Rocio Pérez Arriola</lastmodifierautor>
+    </Summary>-->
+
+    <!--Colocamos esta etiqueta para ordenar los elementos que iran dentro de nuestro programa
+    tambien ponemos el margen que llevara-->
+    <StackLayout Margin="20,35,20,20">
+
+        <!--Colocamos una etiqueta button donde declaramos su propiedades
+        declarando el color de ffondo yy de borde, tambien el tamaño
+        y finalmente un metodo que realizara una accion al dar click--> 
+        <Button Text="Presioname"
+                    TextColor="Green"
+                    BackgroundColor="Yellow"
+                    BorderColor="Red"
+                    BorderWidth="3"
+                    CornerRadius="20"
+                    WidthRequest="300"
+                    HeightRequest="60"
+                    Clicked="OnCounterClicked"
+                 />
+
+        </StackLayout>
+
+</ContentPage>

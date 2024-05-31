@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjemVideo045363922.MainPage">
+    <!--<Summary>
+        <Createddate> 27/05/2024 </createddate>
+            <company> Instituto Nacional Cantón Lourdes</company>
+            <lastmodificationdate> 27/05/2024 </lastmodificationdate>
+            <lastmodifierautor> Andrea Rocio Pérez Arriola</lastmodifierautor>
+    </Summary>-->
+
+    <!--Colocamos esta etiqueta para ordenar los elementos que iran dentro de nuestro programa
+    tambien ponemos el margen que llevara-->
+    <StackLayout Margin="20,35,20,20">
+
+        <!--<Label
+                Text="Bienvenido a mi canal no olvides suscribirte :v"
+                FontSize="22"
+                TextColor="Green"
+                FontAttributes="Bold"
+                HorizontalOptions="End" 
+                TextDecorations="Strikethrough"/>-->
+
+            <!--Declaramos un label con un tamaño de letra mediano y que el texto quede centrado-->
+        <Label FontSize="Medium" HorizontalOptions="Center">
+            <!--Dentro del label colocamos otras como subetiquetas para dar formato al texto-->
+            <Label.FormattedText>
+                <FormattedString>
+                    <!--Tambien colocamos las etiquetas span para colocar el texto cada uno con diferentes propiedades
+                    Coomo el tipo de fuente, colores y la visibilidad del texto-->
+                    <Span TextDecorations="Strikethrough" FontAttributes="Bold">Programacion orientada a objetos</Span>
+                    <Span FontAttributes="Italic" TextColor="Blue">es un paradigma de la programacion</Span>
+                    <Span TextDecorations="Strikethrough" TextColor="Gray">que nos ayuda a obtener meejores resultados</Span>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+    </StackLayout>
+
+</ContentPage>

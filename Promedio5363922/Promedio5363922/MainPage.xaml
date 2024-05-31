@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Promedio5363922.MainPage"
+             BackgroundImageSource="promedio.jpg">
+    <!--<Summary>
+        <Createddate> 28/05/2024 </createddate>
+            <company> Instituto Nacional Cantón Lourdes</company>
+            <lastmodificationdate> 28/05/2024 </lastmodificationdate>
+            <lastmodifierautor> Andrea Rocio Pérez Arriola</lastmodifierautor>
+    </Summary>-->
+
+    <!--Colocamos esta etiqueta para ordenar los elementos que iran dentro de nuestro programa-->
+    <StackLayout>
+
+        <!--Colocamos unas etiquetas label donde el primero mostrara el titulo de nuestro programa
+        Los otros 4 label mostraran el numero de las notas
+        y el ultimo label mostrara el resultado cada uno de ellos haciendo referencia a sus respectivos  entrys-->
+        <Label
+                Text="Promedio de Calificaciones"
+                FontFamily="Elephant"
+                FontSize="32"
+                HorizontalOptions="Center"
+                Padding="10"   
+                TextColor="White"/>
+        <!--Label de numero de nota-->
+        <Label
+                Text="Nota 1"
+                FontFamily="Comic Sans"
+                FontSize="16"
+                HorizontalOptions="FillAndExpand" />
+
+        <!--Declaramos 4 Entrys donde el usuario colocara el valor de la nota de cada alumnno-->
+        
+        <Entry 
+            x:Name="entry1" 
+            Placeholder="Ingrese la primera nota" />
+
+        <!--Label de numero de nota-->
+        <Label
+                Text="Nota 2"
+               FontFamily="Comic Sans"
+                FontSize="16"
+                HorizontalOptions="FillAndExpand" />
+
+        <Entry 
+            x:Name="entry2" 
+            Placeholder="Ingrese la segunda nota" />
+        
+        <!--Label de numero de nota-->
+        <Label
+                Text="Nota 3"
+                FontFamily="Comic Sans"
+                FontSize="16"
+                HorizontalOptions="FillAndExpand" />
+
+        <Entry 
+            x:Name="entry3" 
+            Placeholder="Ingrese la tercera nota" />
+
+        <!--Label de numero de nota-->
+        <Label
+                Text="Nota 4"
+               FontFamily="Comic Sans"
+                FontSize="16"
+                HorizontalOptions="FillAndExpand" />
+
+        <Entry 
+            x:Name="entry4" 
+            Placeholder="Ingrese la cuarta nota" />
+
+        <!--Label de numero de nota-->
+        <Label
+                Text="Nota 5"
+                FontFamily="Comic Sans"
+                FontSize="16"
+                HorizontalOptions="FillAndExpand" />
+
+        <Entry 
+            x:Name="entry5" 
+            Placeholder="Ingrese la quinta nota" 
+           />
+
+        <Button
+            Padding="10"
+                x:Name="CounterBtn"
+                Text="Click me"
+                Clicked="CounterBtn_Clicked"
+                HorizontalOptions="Center" 
+                HeightRequest="40"
+                WidthRequest="160"
+                BackgroundColor="Gainsboro"/>
+
+        <!--Label de resultado-->
+        <Label
+                Text="Resultado"
+                FontFamily="Comic Sans"
+                FontSize="16"
+                HorizontalOptions="FillAndExpand" />
+        
+        <!--Colocamos un Entry mas donde se mostrara  el resultado del promedio-->
+        <Entry 
+            x:Name="entryResult" 
+            Placeholder="Resultado" />
+
+    </StackLayout>
+
+</ContentPage>

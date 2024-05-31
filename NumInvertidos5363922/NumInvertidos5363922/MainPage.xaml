@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NumInvertidos5363922.MainPage"
+             BackgroundImageSource="numeros.jpg">
+
+    <!--<Summary
+        <Createddate> 30/05/2024 </createddate>
+            <company>Instituto Nacional Cantón Lourdes</company>
+            <lastmodificationdate> 30/05/2024 </lastmodificationdate>
+            <lastmodifierautor>Andrea Rocio Pérez Arriola</lastmodifierautor>
+    </Summary>-->
+
+    <!--Esta etqueta se utiliza para poder tener una barra de desplazammiento hacia arriba y abajo
+    Tambien tenemos la etiqueta Stacklayout que organiza los elementos segun nuestra preferencia-->
+    <ScrollView>
+    <StackLayout>
+        
+        <!--Colocamos la etiqueta label para colocar un titulo en nuestro programa y el otro label para pedir al usuario
+        que ingrese 4 numeros, cada label con sus propiedades-->
+            <Label
+                Text="NUMEROS INVERTIDOS"
+                FontFamily="Elephant"
+                FontSize="30"
+                HorizontalOptions="Center"
+                Padding="20"
+                TextColor="White"
+                BackgroundColor="Black"/>
+
+            <Label
+                Text="Ingrese los 4 numeros: "
+                FontFamily="Cambria"
+                FontSize="14"
+                HorizontalOptions="Center"
+                Padding="20"
+                TextColor="White"
+                BackgroundColor="Black"/>
+
+        <!--Colocamos 4 etiquetas Entry que son entradas de texto  donde el usuario ingresará los 4 numeros
+        a estos se le coloca cada una de sus propiedades-->
+        <Entry 
+            x:Name="Entry1"
+            Placeholder="Ingrese el primer numero"  
+            WidthRequest="300"
+            BackgroundColor="Black"
+            />
+
+        <Entry 
+            x:Name="Entry2"
+            Placeholder="Ingrese el primer numero"  
+            WidthRequest="300"
+            BackgroundColor="Black"
+            />
+
+        <Entry 
+            x:Name="Entry3"
+            Placeholder="Ingrese el primer numero"  
+            WidthRequest="300"
+            BackgroundColor="Black"
+            />
+
+        <Entry 
+            x:Name="Entry4"
+            Placeholder="Ingrese el primer numero"  
+            WidthRequest="300"
+            BackgroundColor="Black"
+            />
+
+        <!--La etiqueta button es para que a la hora de dar click este genere la accion para poder
+        inventir los numeros que se ingresaron en los primeros cuatro entrys-->
+        <Button
+                x:Name="CounterBtn"
+                Text="Invertir Numeros"
+                Clicked="CounterBtn_Clicked"
+                HorizontalOptions="Center"
+                HeightRequest="60"
+                BackgroundColor="DarkGray"
+                Padding="20"/>
+
+            <!--Colocamos la etiqueta label para mostrar los
+             4 numeros ingresados, con sus reespectivas propiedades-->
+            <Label
+                Text="Los numeros invertidos son: "
+                FontFamily="Cambria"
+                FontSize="14"
+                HorizontalOptions="Center"
+                Padding="20"
+                TextColor="White"
+                BackgroundColor="Black"/>
+
+            <!--Colocamos 4 etiquetas Entry que son entradas de texto  donde se mostrara los 4 numeros ingresados 
+                pero de forma invertida a estos se le coloca cada una de sus propiedades-->
+            <Entry 
+            x:Name="Entry1In"
+            Placeholder="Numero invertido"  
+            WidthRequest="300"
+            BackgroundColor="Black"
+            />
+
+        <Entry 
+            x:Name="Entry2In"
+            Placeholder="Numero invertido"  
+            WidthRequest="300"
+            BackgroundColor="Black"
+            />
+
+        <Entry 
+            x:Name="Entry3In"
+            Placeholder="Numero invertido"  
+            WidthRequest="300"
+            BackgroundColor="Black"
+            />
+
+        <Entry 
+            x:Name="Entry4In"
+            Placeholder="Numero invertido"  
+            WidthRequest="300"
+            BackgroundColor="Black"
+            />
+
+    </StackLayout>
+    </ScrollView>
+
+</ContentPage>

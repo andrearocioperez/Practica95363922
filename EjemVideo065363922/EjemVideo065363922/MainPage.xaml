@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjemVideo065363922.MainPage">
+
+    <!--<Summary>
+        <Createddate> 27/05/2024 </createddate>
+            <company> Instituto Nacional Cantón Lourdes</company>
+            <lastmodificationdate> 27/05/2024 </lastmodificationdate>
+            <lastmodifierautor> Andrea Rocio Pérez Arriola</lastmodifierautor>
+    </Summary>-->
+
+    <!--Colocamos esta etiqueta para ordenar los elementos que iran dentro de nuestro programa
+    tambien ponemos el margen que llevara-->
+    <StackLayout Margin="20,35,20,20">
+        
+        <!--Colocamos un entry con sus propiedades y este mostrara una entrada de texto donde se podra ingresar una contraseña de usuario-->
+        <Entry Placeholder="Usuario"
+               MaxLength="10"
+               IsSpellCheckEnabled="True"
+               IsTextPredictionEnabled="True"
+               IsPassword="False"
+               Keyboard="Numeric"
+               CharacterSpacing="10"
+               TextChanged="Entry_TextChanged"
+               Completed="Entry_Completed" /> 
+
+    </StackLayout>
+
+</ContentPage>
+ 
